@@ -173,7 +173,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -195,13 +195,13 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
 checking for crypt()
 
-/usr/bin/ld: /tmp/ccvTpytj.o: in function `main':
+/usr/bin/ld: /tmp/cc7z4fek.o: in function `main':
 autotest.c:(.text+0x1d): undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 ----------
@@ -216,7 +216,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -243,7 +243,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -274,7 +274,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -301,7 +301,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -344,7 +344,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -372,7 +372,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -395,7 +395,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -423,7 +423,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -452,7 +452,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -476,7 +476,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -517,7 +517,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -623,7 +623,7 @@ objs/autotest.c: In function 'main':
 objs/autotest.c:7:5: warning: implicit declaration of function 'setproctitle' [-Wimplicit-function-declaration]
     7 |     setproctitle("test");;
       |     ^~~~~~~~~~~~
-/usr/bin/ld: /tmp/ccCgGJI8.o: in function `main':
+/usr/bin/ld: /tmp/cc68pZCd.o: in function `main':
 autotest.c:(.text+0x18): undefined reference to `setproctitle'
 collect2: error: ld returned 1 exit status
 ----------
@@ -638,7 +638,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -735,7 +735,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
@@ -796,7 +796,7 @@ int main(void) {
 }
 
 ----------
-cc -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib -Wl,--export-all-symbols
+cc -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib -Wl,--export-all-symbols
 ----------
 
 ----------------------------------------
@@ -842,11 +842,27 @@ int main(void) {
 }
 
 ----------
-cc -Werror -Wall -I../boringssl/include -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
+cc -Werror -Wall -std=gnu99 -D_GNU_SOURCE -D_FILE_OFFSET_BITS=64 -o objs/autotest objs/autotest.c -Wl,-rpath,/usr/local/LuaJIT/lib
 ----------
 
 ----------------------------------------
 checking for execvpe
+
+
+----------------------------------------
+checking for uthash library
+
+
+----------------------------------------
+checking for C99 features
+
+
+----------------------------------------
+checking for injection library
+
+
+----------------------------------------
+checking for sodium library
 
 
 ----------------------------------------

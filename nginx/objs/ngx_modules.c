@@ -61,6 +61,7 @@ extern ngx_module_t  ngx_http_cache_purge_module;
 extern ngx_module_t  ngx_http_brotli_static_module;
 extern ngx_module_t  ngx_http_concat_module;
 extern ngx_module_t  ngx_http_dav_ext_module;
+extern ngx_module_t  ngx_http_waf_module;
 extern ngx_module_t  ngx_http_write_filter_module;
 extern ngx_module_t  ngx_http_header_filter_module;
 extern ngx_module_t  ngx_http_chunked_filter_module;
@@ -161,6 +162,7 @@ ngx_module_t *ngx_modules[] = {
     &ngx_http_brotli_static_module,
     &ngx_http_concat_module,
     &ngx_http_dav_ext_module,
+    &ngx_http_waf_module,
     &ngx_http_write_filter_module,
     &ngx_http_header_filter_module,
     &ngx_http_chunked_filter_module,
@@ -263,6 +265,7 @@ char *ngx_module_names[] = {
     "ngx_http_brotli_static_module",
     "ngx_http_concat_module",
     "ngx_http_dav_ext_module",
+    "ngx_http_waf_module",
     "ngx_http_write_filter_module",
     "ngx_http_header_filter_module",
     "ngx_http_chunked_filter_module",

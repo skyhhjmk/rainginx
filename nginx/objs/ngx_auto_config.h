@@ -1,4 +1,4 @@
-#define NGX_CONFIGURE " --user=www --group=www --prefix=/www/server/nginx --add-module=/rainginx/ngm/ngx_devel_kit --add-module=/www/server/nginx/src/lua_nginx_module --with-openssl=/rainginx/quictls --with-http_v2_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-http_stub_status_module --with-http_ssl_module --with-http_image_filter_module --with-http_gzip_static_module --with-http_gunzip_module --with-ipv6 --with-http_sub_module --with-http_flv_module --with-http_addition_module --with-http_realip_module --with-http_mp4_module --with-ld-opt=-Wl,-E --with-ld-opt=-ljemalloc --with-ld-opt='-L../boringssl/build/ssl -L../boringssl/build/crypto' --with-ld-opt=-Wl,-rpath,/usr/local/LuaJIT/lib --with-cc-opt=-Wno-error --with-http_dav_module --with-http_v3_module --with-cc-opt=-I../boringssl/include --with-http_geoip_module --add-module=/rainginx/ngm/ngx_cache_purge --add-module=/rainginx/ngm/ngx_brotli --add-module=/rainginx/ngm/ngx_http_substitutions_filter_module --with-pcre=/rainginx/pcre --add-module=/rainginx/ngm/nginx-http-concat --add-module=/rainginx/ngm/nginx-dav-ext-module"
+#define NGX_CONFIGURE " --user=www --group=www --prefix=/www/server/nginx --add-module=/rainginx/ngm/ngx_devel_kit --with-openssl=/rainginx/openssl --with-http_v2_module --with-stream --with-stream_ssl_module --with-stream_ssl_preread_module --with-http_stub_status_module --with-http_ssl_module --with-http_image_filter_module --with-http_gzip_static_module --with-http_gunzip_module --with-ipv6 --with-http_sub_module --with-http_flv_module --with-http_addition_module --with-http_realip_module --with-http_mp4_module --with-ld-opt=-Wl,-E --with-ld-opt=-ljemalloc --with-ld-opt='-L../boringssl/build/ssl -L../boringssl/build/crypto' --with-cc-opt=-Wno-error --with-http_dav_module --with-http_v3_module --with-cc-opt=-I../boringssl/include --with-http_geoip_module --add-module=/rainginx/ngm/ngx_cache_purge --add-module=/rainginx/ngm/ngx_brotli --add-module=/rainginx/ngm/ngx_http_substitutions_filter_module --with-pcre=/rainginx/pcre --add-module=/rainginx/ngm/nginx-http-concat --add-module=/www/server/nginx/src/lua_nginx_module --with-ld-opt=-Wl,-rpath,/usr/local/LuaJIT/lib --add-module=/rainginx/ngm/nginx-dav-ext-module --add-module=/www/server/nginx/src/ngx_waf --with-cc-opt=-std=gnu99"
 
 #ifndef NGX_COMPILER
 #define NGX_COMPILER  "gcc 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) "
@@ -488,31 +488,6 @@
 #endif
 
 
-#ifndef NGX_HTTP_LUA_HAVE_SO_PASSCRED
-#define NGX_HTTP_LUA_HAVE_SO_PASSCRED  1
-#endif
-
-
-#ifndef NGX_HTTP_LUA_HAVE_SA_RESTART
-#define NGX_HTTP_LUA_HAVE_SA_RESTART  1
-#endif
-
-
-#ifndef NGX_HTTP_LUA_HAVE_MALLOC_TRIM
-#define NGX_HTTP_LUA_HAVE_MALLOC_TRIM  1
-#endif
-
-
-#ifndef NGX_HTTP_LUA_HAVE_PIPE2
-#define NGX_HTTP_LUA_HAVE_PIPE2  1
-#endif
-
-
-#ifndef NGX_HTTP_LUA_HAVE_EXECVPE
-#define NGX_HTTP_LUA_HAVE_EXECVPE  1
-#endif
-
-
 #ifndef NGX_HTTP_PROXY
 #define NGX_HTTP_PROXY  1
 #endif
@@ -560,6 +535,31 @@
 
 #ifndef NGX_HTTP_BROTLI_STATIC_MODULE
 #define NGX_HTTP_BROTLI_STATIC_MODULE  1
+#endif
+
+
+#ifndef NGX_HTTP_LUA_HAVE_SO_PASSCRED
+#define NGX_HTTP_LUA_HAVE_SO_PASSCRED  1
+#endif
+
+
+#ifndef NGX_HTTP_LUA_HAVE_SA_RESTART
+#define NGX_HTTP_LUA_HAVE_SA_RESTART  1
+#endif
+
+
+#ifndef NGX_HTTP_LUA_HAVE_MALLOC_TRIM
+#define NGX_HTTP_LUA_HAVE_MALLOC_TRIM  1
+#endif
+
+
+#ifndef NGX_HTTP_LUA_HAVE_PIPE2
+#define NGX_HTTP_LUA_HAVE_PIPE2  1
+#endif
+
+
+#ifndef NGX_HTTP_LUA_HAVE_EXECVPE
+#define NGX_HTTP_LUA_HAVE_EXECVPE  1
 #endif
 
 

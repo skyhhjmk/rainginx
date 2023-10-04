@@ -1,6 +1,6 @@
 
 CC =	cc
-CFLAGS = -I/usr/local/LuaJIT/include/luajit-2.1  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g -I../boringssl/include -DNDK_SET_VAR -Wno-deprecated-declarations
+CFLAGS = -I/usr/local/LuaJIT/include/luajit-2.1  -pipe  -O -W -Wall -Wpointer-arith -Wno-unused-parameter -Werror -g -std=gnu99 -Wno-deprecated-declarations -DNDK_SET_VAR
 CPP =	cc -E
 LINK =	$(CC)
 
@@ -14,7 +14,7 @@ ALL_INCS = -I src/core \
 	-I objs/addon/ndk \
 	-I /www/server/nginx/src/lua_nginx_module/src/api \
 	-I /rainginx/pcre \
-	-I /rainginx/quictls/.openssl/include \
+	-I /rainginx/openssl/.openssl/include \
 	-I /usr/include/libxml2 \
 	-I objs \
 	-I src/http \
@@ -25,8 +25,11 @@ ALL_INCS = -I src/core \
 	-I /rainginx/ngm/ngx_devel_kit/src \
 	-I /rainginx/ngm/ngx_devel_kit/objs \
 	-I objs/addon/ndk \
-	-I /usr/local/LuaJIT/include/luajit-2.1 \
 	-I /rainginx/ngm/ngx_brotli/deps/brotli/c/include \
+	-I /usr/local/LuaJIT/include/luajit-2.1 \
+	-I /www/server/nginx/src/ngx_waf/inc \
+	-I /usr/local/src/uthash/include \
+	-I /www/server/nginx/src/ngx_waf/inc/libinjection/src \
 	-I src/stream
 
 
@@ -108,7 +111,7 @@ CORE_DEPS = src/core/nginx.h \
 	src/event/quic/ngx_event_quic_openssl_compat.h \
 	src/core/ngx_regex.h \
 	/rainginx/pcre/pcre.h \
-	/rainginx/quictls/.openssl/include/openssl/ssl.h \
+	/rainginx/openssl/.openssl/include/openssl/ssl.h \
 	objs/ngx_auto_config.h
 
 
@@ -121,7 +124,7 @@ CORE_INCS = -I src/core \
 	-I objs/addon/ndk \
 	-I /www/server/nginx/src/lua_nginx_module/src/api \
 	-I /rainginx/pcre \
-	-I /rainginx/quictls/.openssl/include \
+	-I /rainginx/openssl/.openssl/include \
 	-I /usr/include/libxml2 \
 	-I objs
 
@@ -154,8 +157,11 @@ HTTP_INCS = -I src/http \
 	-I /rainginx/ngm/ngx_devel_kit/src \
 	-I /rainginx/ngm/ngx_devel_kit/objs \
 	-I objs/addon/ndk \
+	-I /rainginx/ngm/ngx_brotli/deps/brotli/c/include \
 	-I /usr/local/LuaJIT/include/luajit-2.1 \
-	-I /rainginx/ngm/ngx_brotli/deps/brotli/c/include
+	-I /www/server/nginx/src/ngx_waf/inc \
+	-I /usr/local/src/uthash/include \
+	-I /www/server/nginx/src/ngx_waf/inc/libinjection/src
 
 
 STREAM_DEPS = src/stream/ngx_stream.h \
@@ -169,7 +175,7 @@ STREAM_DEPS = src/stream/ngx_stream.h \
 STREAM_INCS = -I src/stream
 
 
-ADDON_DEPS = $(CORE_DEPS)  /rainginx/ngm/ngx_devel_kit/src/ndk.h              /www/server/nginx/src/lua_nginx_module/src/ddebug.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_autoconf.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_script.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_log.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_subrequest.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ndk.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_control.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_string.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_misc.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_output.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_uri.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_req_body.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_args.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ctx.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_common.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_directive.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers_out.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers_in.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_consts.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_exception.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_util.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_cache.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_contentby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_server_rewriteby.c             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_rewriteby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_accessby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_setby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_capturefilter.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_clfactory.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_pcrefix.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headerfilterby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_shdict.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_socket_tcp.h             /www/server/nginx/src/lua_nginx_module/src/api/ngx_http_lua_api.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_logby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_sleep.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_semaphore.h            /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_coroutine.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_bodyfilterby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_initby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_initworkerby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_exitworkerby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_socket_udp.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_probe.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_uthread.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_timer.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_config.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_client_helloby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_certby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_lex.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_balancer.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_session_storeby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_session_fetchby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_log_ringbuf.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_input_filters.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_pipe.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_worker_thread.h              /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/encode.h               /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/port.h               /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/types.h $(HTTP_DEPS) $(STREAM_DEPS)
+ADDON_DEPS = $(CORE_DEPS)  /rainginx/ngm/ngx_devel_kit/src/ndk.h /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/encode.h               /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/port.h               /rainginx/ngm/ngx_brotli/deps/brotli/c/include/brotli/types.h              /www/server/nginx/src/lua_nginx_module/src/ddebug.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_autoconf.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_script.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_log.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_subrequest.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ndk.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_control.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_string.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_misc.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_output.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_uri.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_req_body.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_args.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ctx.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_common.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_directive.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers_out.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headers_in.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_consts.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_exception.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_util.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_cache.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_contentby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_server_rewriteby.c             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_rewriteby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_accessby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_setby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_capturefilter.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_clfactory.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_pcrefix.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_headerfilterby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_shdict.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_socket_tcp.h             /www/server/nginx/src/lua_nginx_module/src/api/ngx_http_lua_api.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_logby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_sleep.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_semaphore.h            /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_coroutine.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_bodyfilterby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_initby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_initworkerby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_exitworkerby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_socket_udp.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_probe.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_uthread.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_timer.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_config.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_client_helloby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_certby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_lex.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_balancer.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_session_storeby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl_session_fetchby.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_ssl.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_log_ringbuf.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_input_filters.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_pipe.h             /www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_worker_thread.h              /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_check.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_config.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_core.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_macro.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_type.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_util.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_ip_trie.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_mem_pool.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_lru_cache.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_under_attack.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_vm.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_lexer.h     /www/server/nginx/src/ngx_waf/inc/ngx_http_waf_module_parser.tab.h $(HTTP_DEPS) $(STREAM_DEPS)
 
 
 build:	binary modules manpage
@@ -366,6 +372,11 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/stream/ngx_stream_upstream_zone_module.o \
 	objs/src/stream/ngx_stream_ssl_preread_module.o \
 	objs/addon/src/ndk.o \
+	objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
+	objs/addon/filter/ngx_http_brotli_filter_module.o \
+	objs/addon/static/ngx_http_brotli_static_module.o \
+	objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
+	objs/addon/nginx-http-concat/ngx_http_concat_module.o \
 	objs/addon/src/ngx_http_lua_script.o \
 	objs/addon/src/ngx_http_lua_log.o \
 	objs/addon/src/ngx_http_lua_subrequest.o \
@@ -429,12 +440,21 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/addon/src/ngx_http_lua_input_filters.o \
 	objs/addon/src/ngx_http_lua_pipe.o \
 	objs/addon/src/ngx_http_lua_worker_thread.o \
-	objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
-	objs/addon/filter/ngx_http_brotli_filter_module.o \
-	objs/addon/static/ngx_http_brotli_static_module.o \
-	objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
-	objs/addon/nginx-http-concat/ngx_http_concat_module.o \
 	objs/addon/nginx-dav-ext-module/ngx_http_dav_ext_module.o \
+	objs/addon/src/ngx_http_waf_module_core.o \
+	objs/addon/src/ngx_http_waf_module_check.o \
+	objs/addon/src/ngx_http_waf_module_config.o \
+	objs/addon/src/ngx_http_waf_module_ip_trie.o \
+	objs/addon/src/ngx_http_waf_module_lru_cache.o \
+	objs/addon/src/ngx_http_waf_module_mem_pool.o \
+	objs/addon/src/ngx_http_waf_module_under_attack.o \
+	objs/addon/src/ngx_http_waf_module_util.o \
+	objs/addon/src/ngx_http_waf_module_vm.o \
+	objs/addon/src/ngx_http_waf_module_lexer.o \
+	objs/addon/src/ngx_http_waf_module_parser.tab.o \
+	objs/addon/src/libinjection_html5.o \
+	objs/addon/src/libinjection_sqli.o \
+	objs/addon/src/libinjection_xss.o \
 	objs/ngx_modules.o \
 	/rainginx/pcre/.libs/libpcre.a
 
@@ -629,6 +649,11 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/src/stream/ngx_stream_upstream_zone_module.o \
 	objs/src/stream/ngx_stream_ssl_preread_module.o \
 	objs/addon/src/ndk.o \
+	objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
+	objs/addon/filter/ngx_http_brotli_filter_module.o \
+	objs/addon/static/ngx_http_brotli_static_module.o \
+	objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
+	objs/addon/nginx-http-concat/ngx_http_concat_module.o \
 	objs/addon/src/ngx_http_lua_script.o \
 	objs/addon/src/ngx_http_lua_log.o \
 	objs/addon/src/ngx_http_lua_subrequest.o \
@@ -692,14 +717,23 @@ objs/nginx:	objs/src/core/nginx.o \
 	objs/addon/src/ngx_http_lua_input_filters.o \
 	objs/addon/src/ngx_http_lua_pipe.o \
 	objs/addon/src/ngx_http_lua_worker_thread.o \
-	objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
-	objs/addon/filter/ngx_http_brotli_filter_module.o \
-	objs/addon/static/ngx_http_brotli_static_module.o \
-	objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
-	objs/addon/nginx-http-concat/ngx_http_concat_module.o \
 	objs/addon/nginx-dav-ext-module/ngx_http_dav_ext_module.o \
+	objs/addon/src/ngx_http_waf_module_core.o \
+	objs/addon/src/ngx_http_waf_module_check.o \
+	objs/addon/src/ngx_http_waf_module_config.o \
+	objs/addon/src/ngx_http_waf_module_ip_trie.o \
+	objs/addon/src/ngx_http_waf_module_lru_cache.o \
+	objs/addon/src/ngx_http_waf_module_mem_pool.o \
+	objs/addon/src/ngx_http_waf_module_under_attack.o \
+	objs/addon/src/ngx_http_waf_module_util.o \
+	objs/addon/src/ngx_http_waf_module_vm.o \
+	objs/addon/src/ngx_http_waf_module_lexer.o \
+	objs/addon/src/ngx_http_waf_module_parser.tab.o \
+	objs/addon/src/libinjection_html5.o \
+	objs/addon/src/libinjection_sqli.o \
+	objs/addon/src/libinjection_xss.o \
 	objs/ngx_modules.o \
-	-L/usr/local/LuaJIT/lib -Wl,-rpath,/usr/local/LuaJIT/lib -Wl,-E -lcrypt -L/usr/local/LuaJIT/lib -lluajit-5.1 -lm -ldl -L/rainginx/ngm/ngx_brotli/deps/brotli/c/../out -lbrotlienc -lbrotlicommon -lm /rainginx/pcre/.libs/libpcre.a /rainginx/quictls/.openssl/lib/libssl.a /rainginx/quictls/.openssl/lib/libcrypto.a -lz -lxml2 -lxslt -lexslt -lgd -lGeoIP \
+	-L/usr/local/LuaJIT/lib -Wl,-rpath,/usr/local/LuaJIT/lib -Wl,-E -lcrypt -L/rainginx/ngm/ngx_brotli/deps/brotli/c/../out -lbrotlienc -lbrotlicommon -lm -L/usr/local/LuaJIT/lib -lluajit-5.1 -lm -ldl -l sodium /rainginx/pcre/.libs/libpcre.a /rainginx/openssl/.openssl/lib/libssl.a /rainginx/openssl/.openssl/lib/libcrypto.a -lz -lxml2 -lxslt -lexslt -lgd -lGeoIP \
 	-Wl,-E
 	
 
@@ -2043,6 +2077,41 @@ objs/addon/src/ndk.o:	$(ADDON_DEPS) \
 		/rainginx/ngm/ngx_devel_kit/src/ndk.c
 
 
+objs/addon/ngx_cache_purge/ngx_cache_purge_module.o:	$(ADDON_DEPS) \
+	/rainginx/ngm/ngx_cache_purge/ngx_cache_purge_module.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
+		/rainginx/ngm/ngx_cache_purge/ngx_cache_purge_module.c
+
+
+objs/addon/filter/ngx_http_brotli_filter_module.o:	$(ADDON_DEPS) \
+	/rainginx/ngm/ngx_brotli/filter/ngx_http_brotli_filter_module.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/filter/ngx_http_brotli_filter_module.o \
+		/rainginx/ngm/ngx_brotli/filter/ngx_http_brotli_filter_module.c
+
+
+objs/addon/static/ngx_http_brotli_static_module.o:	$(ADDON_DEPS) \
+	/rainginx/ngm/ngx_brotli/static/ngx_http_brotli_static_module.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/static/ngx_http_brotli_static_module.o \
+		/rainginx/ngm/ngx_brotli/static/ngx_http_brotli_static_module.c
+
+
+objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o:	$(ADDON_DEPS) \
+	/rainginx/ngm/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
+		/rainginx/ngm/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.c
+
+
+objs/addon/nginx-http-concat/ngx_http_concat_module.o:	$(ADDON_DEPS) \
+	/rainginx/ngm/nginx-http-concat/ngx_http_concat_module.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/nginx-http-concat/ngx_http_concat_module.o \
+		/rainginx/ngm/nginx-http-concat/ngx_http_concat_module.c
+
+
 objs/addon/src/ngx_http_lua_script.o:	$(ADDON_DEPS) \
 	/www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_script.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
@@ -2484,46 +2553,109 @@ objs/addon/src/ngx_http_lua_worker_thread.o:	$(ADDON_DEPS) \
 		/www/server/nginx/src/lua_nginx_module/src/ngx_http_lua_worker_thread.c
 
 
-objs/addon/ngx_cache_purge/ngx_cache_purge_module.o:	$(ADDON_DEPS) \
-	/rainginx/ngm/ngx_cache_purge/ngx_cache_purge_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/ngx_cache_purge/ngx_cache_purge_module.o \
-		/rainginx/ngm/ngx_cache_purge/ngx_cache_purge_module.c
-
-
-objs/addon/filter/ngx_http_brotli_filter_module.o:	$(ADDON_DEPS) \
-	/rainginx/ngm/ngx_brotli/filter/ngx_http_brotli_filter_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/filter/ngx_http_brotli_filter_module.o \
-		/rainginx/ngm/ngx_brotli/filter/ngx_http_brotli_filter_module.c
-
-
-objs/addon/static/ngx_http_brotli_static_module.o:	$(ADDON_DEPS) \
-	/rainginx/ngm/ngx_brotli/static/ngx_http_brotli_static_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/static/ngx_http_brotli_static_module.o \
-		/rainginx/ngm/ngx_brotli/static/ngx_http_brotli_static_module.c
-
-
-objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o:	$(ADDON_DEPS) \
-	/rainginx/ngm/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.o \
-		/rainginx/ngm/ngx_http_substitutions_filter_module/ngx_http_subs_filter_module.c
-
-
-objs/addon/nginx-http-concat/ngx_http_concat_module.o:	$(ADDON_DEPS) \
-	/rainginx/ngm/nginx-http-concat/ngx_http_concat_module.c
-	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
-		-o objs/addon/nginx-http-concat/ngx_http_concat_module.o \
-		/rainginx/ngm/nginx-http-concat/ngx_http_concat_module.c
-
-
 objs/addon/nginx-dav-ext-module/ngx_http_dav_ext_module.o:	$(ADDON_DEPS) \
 	/rainginx/ngm/nginx-dav-ext-module/ngx_http_dav_ext_module.c
 	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
 		-o objs/addon/nginx-dav-ext-module/ngx_http_dav_ext_module.o \
 		/rainginx/ngm/nginx-dav-ext-module/ngx_http_dav_ext_module.c
+
+
+objs/addon/src/ngx_http_waf_module_core.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_core.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_core.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_core.c
+
+
+objs/addon/src/ngx_http_waf_module_check.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_check.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_check.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_check.c
+
+
+objs/addon/src/ngx_http_waf_module_config.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_config.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_config.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_config.c
+
+
+objs/addon/src/ngx_http_waf_module_ip_trie.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_ip_trie.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_ip_trie.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_ip_trie.c
+
+
+objs/addon/src/ngx_http_waf_module_lru_cache.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_lru_cache.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_lru_cache.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_lru_cache.c
+
+
+objs/addon/src/ngx_http_waf_module_mem_pool.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_mem_pool.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_mem_pool.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_mem_pool.c
+
+
+objs/addon/src/ngx_http_waf_module_under_attack.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_under_attack.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_under_attack.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_under_attack.c
+
+
+objs/addon/src/ngx_http_waf_module_util.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_util.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_util.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_util.c
+
+
+objs/addon/src/ngx_http_waf_module_vm.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_vm.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_vm.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_vm.c
+
+
+objs/addon/src/ngx_http_waf_module_lexer.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_lexer.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_lexer.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_lexer.c
+
+
+objs/addon/src/ngx_http_waf_module_parser.tab.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_parser.tab.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/ngx_http_waf_module_parser.tab.o \
+		/www/server/nginx/src/ngx_waf/src/ngx_http_waf_module_parser.tab.c
+
+
+objs/addon/src/libinjection_html5.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_html5.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/libinjection_html5.o \
+		/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_html5.c
+
+
+objs/addon/src/libinjection_sqli.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_sqli.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/libinjection_sqli.o \
+		/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_sqli.c
+
+
+objs/addon/src/libinjection_xss.o:	$(ADDON_DEPS) \
+	/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_xss.c
+	$(CC) -c $(CFLAGS)  $(ALL_INCS) \
+		-o objs/addon/src/libinjection_xss.o \
+		/www/server/nginx/src/ngx_waf/inc/libinjection/src/libinjection_xss.c
 
 
 /rainginx/pcre/pcre.h:	/rainginx/pcre/Makefile
@@ -2539,10 +2671,10 @@ objs/addon/nginx-dav-ext-module/ngx_http_dav_ext_module.o:	$(ADDON_DEPS) \
 	&& $(MAKE) libpcre.la
 
 
-/rainginx/quictls/.openssl/include/openssl/ssl.h:	objs/Makefile
-	cd /rainginx/quictls \
+/rainginx/openssl/.openssl/include/openssl/ssl.h:	objs/Makefile
+	cd /rainginx/openssl \
 	&& if [ -f Makefile ]; then $(MAKE) clean; fi \
-	&& ./config --prefix=/rainginx/quictls/.openssl no-shared no-threads  \
+	&& ./config --prefix=/rainginx/openssl/.openssl no-shared no-threads  \
 	&& $(MAKE) \
 	&& $(MAKE) install_sw LIBDIR=lib
 
