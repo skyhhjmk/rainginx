@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/timingsafe.dir/timingsafe.c.o -o timingsafe  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

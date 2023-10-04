@@ -1,0 +1,10 @@
+camellia/libcrypto_la-cmll_ecb.lo: camellia/cmll_ecb.c \
+ /usr/include/stdc-predef.h ../include/openssl/camellia.h \
+ ../include/openssl/opensslconf.h ../include/openssl/opensslfeatures.h \
+ /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h camellia/cmll_local.h
+/usr/include/stdc-predef.h:
+../include/openssl/camellia.h:
+../include/openssl/opensslconf.h:
+../include/openssl/opensslfeatures.h:
+/usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
+camellia/cmll_local.h:

@@ -1,0 +1,245 @@
+Determining if the function strlcat exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_dd1de/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_dd1de.dir/build.make CMakeFiles/cmTC_dd1de.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dd1de.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strlcat -fPIE -o CMakeFiles/cmTC_dd1de.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_dd1de
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_dd1de.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strlcat CMakeFiles/cmTC_dd1de.dir/CheckFunctionExists.c.o -o cmTC_dd1de 
+/usr/bin/ld: CMakeFiles/cmTC_dd1de.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_dd1de.dir/build.make:99: cmTC_dd1de] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_dd1de/fast] Error 2
+
+
+
+Determining if the function strlcpy exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3e8a8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3e8a8.dir/build.make CMakeFiles/cmTC_3e8a8.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3e8a8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strlcpy -fPIE -o CMakeFiles/cmTC_3e8a8.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3e8a8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3e8a8.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strlcpy CMakeFiles/cmTC_3e8a8.dir/CheckFunctionExists.c.o -o cmTC_3e8a8 
+/usr/bin/ld: CMakeFiles/cmTC_3e8a8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_3e8a8.dir/build.make:99: cmTC_3e8a8] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_3e8a8/fast] Error 2
+
+
+
+Determining if the function arc4random_buf exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2bd0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2bd0f.dir/build.make CMakeFiles/cmTC_2bd0f.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2bd0f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=arc4random_buf -fPIE -o CMakeFiles/cmTC_2bd0f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2bd0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2bd0f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=arc4random_buf CMakeFiles/cmTC_2bd0f.dir/CheckFunctionExists.c.o -o cmTC_2bd0f 
+/usr/bin/ld: CMakeFiles/cmTC_2bd0f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `arc4random_buf'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_2bd0f.dir/build.make:99: cmTC_2bd0f] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_2bd0f/fast] Error 2
+
+
+
+Determining if the function arc4random_uniform exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_600d6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_600d6.dir/build.make CMakeFiles/cmTC_600d6.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_600d6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=arc4random_uniform -fPIE -o CMakeFiles/cmTC_600d6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_600d6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_600d6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=arc4random_uniform CMakeFiles/cmTC_600d6.dir/CheckFunctionExists.c.o -o cmTC_600d6 
+/usr/bin/ld: CMakeFiles/cmTC_600d6.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `arc4random_uniform'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_600d6.dir/build.make:99: cmTC_600d6] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_600d6/fast] Error 2
+
+
+
+Determining if the function getprogname exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_205bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_205bc.dir/build.make CMakeFiles/cmTC_205bc.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_205bc.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=getprogname -fPIE -o CMakeFiles/cmTC_205bc.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_205bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_205bc.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=getprogname CMakeFiles/cmTC_205bc.dir/CheckFunctionExists.c.o -o cmTC_205bc 
+/usr/bin/ld: CMakeFiles/cmTC_205bc.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `getprogname'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_205bc.dir/build.make:99: cmTC_205bc] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_205bc/fast] Error 2
+
+
+
+Determining if the function syslog_r exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8fa4f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8fa4f.dir/build.make CMakeFiles/cmTC_8fa4f.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8fa4f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=syslog_r -fPIE -o CMakeFiles/cmTC_8fa4f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8fa4f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fa4f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=syslog_r CMakeFiles/cmTC_8fa4f.dir/CheckFunctionExists.c.o -o cmTC_8fa4f 
+/usr/bin/ld: CMakeFiles/cmTC_8fa4f.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `syslog_r'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_8fa4f.dir/build.make:99: cmTC_8fa4f] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8fa4f/fast] Error 2
+
+
+
+Determining if the timespecsub exist failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_acb9e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_acb9e.dir/build.make CMakeFiles/cmTC_acb9e.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_acb9e.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_acb9e.dir/CheckSymbolExists.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘timespecsub’ undeclared (first use in this function); did you mean ‘timespec’?
+    8 |   return ((int*)(&timespecsub))[argc];
+      |                   ^~~~~~~~~~~
+      |                   timespec
+/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_acb9e.dir/build.make:78: CMakeFiles/cmTC_acb9e.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_acb9e/fast] Error 2
+
+
+File /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/time.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef timespecsub
+  return ((int*)(&timespecsub))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function timingsafe_bcmp exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cdd26/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cdd26.dir/build.make CMakeFiles/cmTC_cdd26.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cdd26.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=timingsafe_bcmp -fPIE -o CMakeFiles/cmTC_cdd26.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cdd26
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cdd26.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=timingsafe_bcmp CMakeFiles/cmTC_cdd26.dir/CheckFunctionExists.c.o -o cmTC_cdd26 
+/usr/bin/ld: CMakeFiles/cmTC_cdd26.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `timingsafe_bcmp'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_cdd26.dir/build.make:99: cmTC_cdd26] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_cdd26/fast] Error 2
+
+
+
+Determining if the function timingsafe_memcmp exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9ea1b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ea1b.dir/build.make CMakeFiles/cmTC_9ea1b.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9ea1b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=timingsafe_memcmp -fPIE -o CMakeFiles/cmTC_9ea1b.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9ea1b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ea1b.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=timingsafe_memcmp CMakeFiles/cmTC_9ea1b.dir/CheckFunctionExists.c.o -o cmTC_9ea1b 
+/usr/bin/ld: CMakeFiles/cmTC_9ea1b.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `timingsafe_memcmp'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_9ea1b.dir/build.make:99: cmTC_9ea1b] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_9ea1b/fast] Error 2
+
+
+
+Determining if files machine/endian.h exist failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7f934/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7f934.dir/build.make CMakeFiles/cmTC_7f934.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f934.dir/HAVE_MACHINE_ENDIAN_H.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_7f934.dir/HAVE_MACHINE_ENDIAN_H.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CheckIncludeFiles/HAVE_MACHINE_ENDIAN_H.c
+/rainginx/nginx/libressl/build/CMakeFiles/CheckIncludeFiles/HAVE_MACHINE_ENDIAN_H.c:2:10: fatal error: machine/endian.h: No such file or directory
+    2 | #include <machine/endian.h>
+      |          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_7f934.dir/build.make:78: CMakeFiles/cmTC_7f934.dir/HAVE_MACHINE_ENDIAN_H.c.o] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_7f934/fast] Error 2
+
+
+Source:
+/* */
+#include <machine/endian.h>
+
+
+int main(void){return 0;}
+
+Determining if the function b64_ntop exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_996c8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_996c8.dir/build.make CMakeFiles/cmTC_996c8.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_996c8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=b64_ntop -fPIE -o CMakeFiles/cmTC_996c8.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_996c8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_996c8.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=b64_ntop CMakeFiles/cmTC_996c8.dir/CheckFunctionExists.c.o -o cmTC_996c8 
+/usr/bin/ld: CMakeFiles/cmTC_996c8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `b64_ntop'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_996c8.dir/build.make:99: cmTC_996c8] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_996c8/fast] Error 2
+
+
+
+Determining if the function readpassphrase exists failed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc0f2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc0f2.dir/build.make CMakeFiles/cmTC_fc0f2.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fc0f2.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=readpassphrase -fPIE -o CMakeFiles/cmTC_fc0f2.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_fc0f2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc0f2.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=readpassphrase CMakeFiles/cmTC_fc0f2.dir/CheckFunctionExists.c.o -o cmTC_fc0f2 
+/usr/bin/ld: CMakeFiles/cmTC_fc0f2.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `readpassphrase'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_fc0f2.dir/build.make:99: cmTC_fc0f2] Error 1
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fc0f2/fast] Error 2
+
+
+

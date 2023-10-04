@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/asn1evp.dir/asn1evp.c.o -o asn1evp  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/bio_mem.dir/bio_mem.c.o -o bio_mem  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

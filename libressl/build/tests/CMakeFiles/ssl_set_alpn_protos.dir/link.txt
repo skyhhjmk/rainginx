@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ssl_set_alpn_protos.dir/ssl_set_alpn_protos.c.o -o ssl_set_alpn_protos  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

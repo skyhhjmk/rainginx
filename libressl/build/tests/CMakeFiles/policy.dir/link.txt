@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/policy.dir/policy.c.o -o policy  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

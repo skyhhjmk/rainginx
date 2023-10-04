@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ecdhtest.dir/ecdhtest.c.o -o ecdhtest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

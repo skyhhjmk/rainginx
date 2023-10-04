@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/evp_test.dir/evp_test.c.o -o evp_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

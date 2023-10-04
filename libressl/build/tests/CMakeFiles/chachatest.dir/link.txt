@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/chachatest.dir/chachatest.c.o -o chachatest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/tlslegacytest.dir/tlslegacytest.c.o -o tlslegacytest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

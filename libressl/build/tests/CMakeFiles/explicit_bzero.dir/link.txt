@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/explicit_bzero.dir/explicit_bzero.c.o -o explicit_bzero  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/rsa_test.dir/rsa_test.c.o -o rsa_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

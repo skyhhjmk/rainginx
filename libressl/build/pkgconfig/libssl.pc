@@ -1,0 +1,13 @@
+#libssl pkg-config source file
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: LibreSSL-libssl
+Description: Secure Sockets Layer and cryptography libraries
+Version: 3.8.1
+Requires.private: libcrypto
+Libs: -L${libdir} -lssl
+Cflags: -I${includedir}

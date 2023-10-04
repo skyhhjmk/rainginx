@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/recordtest.dir/recordtest.c.o -o recordtest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

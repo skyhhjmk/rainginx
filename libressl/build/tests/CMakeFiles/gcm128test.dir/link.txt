@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/gcm128test.dir/gcm128test.c.o -o gcm128test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

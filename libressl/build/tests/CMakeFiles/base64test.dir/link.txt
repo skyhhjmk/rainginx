@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/base64test.dir/base64test.c.o -o base64test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

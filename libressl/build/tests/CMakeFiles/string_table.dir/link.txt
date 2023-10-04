@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/string_table.dir/string_table.c.o -o string_table  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

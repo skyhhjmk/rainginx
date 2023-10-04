@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/handshake_table.dir/handshake_table.c.o -o handshake_table  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

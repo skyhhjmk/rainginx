@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/evp_pkey_cleanup.dir/evp_pkey_cleanup.c.o -o evp_pkey_cleanup  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

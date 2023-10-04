@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/rc4_test.dir/rc4_test.c.o -o rc4_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

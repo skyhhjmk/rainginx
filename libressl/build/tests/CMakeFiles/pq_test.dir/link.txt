@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/pq_test.dir/pq_test.c.o -o pq_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

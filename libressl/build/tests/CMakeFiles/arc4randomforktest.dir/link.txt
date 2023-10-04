@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/arc4randomforktest.dir/arc4randomforktest.c.o -o arc4randomforktest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

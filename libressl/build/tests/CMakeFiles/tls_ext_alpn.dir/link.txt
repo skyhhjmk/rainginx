@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/tls_ext_alpn.dir/tls_ext_alpn.c.o -o tls_ext_alpn  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ocspcheck.dir/http.c.o CMakeFiles/ocspcheck.dir/ocspcheck.c.o -o ocspcheck  ../../tls/libtls.a ../../ssl/libssl.a ../../crypto/libcrypto.a -lpthread -lrt 

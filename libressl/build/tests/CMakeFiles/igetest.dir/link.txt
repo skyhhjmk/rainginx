@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/igetest.dir/igetest.c.o -o igetest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

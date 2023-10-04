@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/aes_test.dir/aes_test.c.o -o aes_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

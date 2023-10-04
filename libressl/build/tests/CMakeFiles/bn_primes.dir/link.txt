@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/bn_primes.dir/bn_primes.c.o -o bn_primes  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

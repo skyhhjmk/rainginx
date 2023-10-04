@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/poly1305test.dir/poly1305test.c.o -o poly1305test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ssl_methods.dir/ssl_methods.c.o -o ssl_methods  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

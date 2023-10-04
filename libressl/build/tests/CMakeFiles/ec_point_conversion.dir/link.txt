@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ec_point_conversion.dir/ec_point_conversion.c.o -o ec_point_conversion  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

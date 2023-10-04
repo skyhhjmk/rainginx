@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/x509_asn1.dir/x509_asn1.c.o -o x509_asn1  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

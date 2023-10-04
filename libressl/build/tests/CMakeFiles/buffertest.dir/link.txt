@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/buffertest.dir/buffertest.c.o -o buffertest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

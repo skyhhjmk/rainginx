@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/nc.dir/atomicio.c.o CMakeFiles/nc.dir/netcat.c.o CMakeFiles/nc.dir/socks.c.o CMakeFiles/nc.dir/compat/socket.c.o CMakeFiles/nc.dir/compat/base64.c.o CMakeFiles/nc.dir/compat/readpassphrase.c.o -o nc  ../../tls/libtls.a -lpthread -lrt 

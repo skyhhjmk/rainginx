@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/record_layer_test.dir/record_layer_test.c.o -o record_layer_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

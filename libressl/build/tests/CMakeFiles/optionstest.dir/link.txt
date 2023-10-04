@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/optionstest.dir/optionstest.c.o -o optionstest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

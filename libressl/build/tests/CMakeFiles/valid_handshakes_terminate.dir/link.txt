@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/valid_handshakes_terminate.dir/valid_handshakes_terminate.c.o -o valid_handshakes_terminate  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

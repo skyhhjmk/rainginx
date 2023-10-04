@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/asn1basic.dir/asn1basic.c.o -o asn1basic  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

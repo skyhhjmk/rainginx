@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ssl_get_shared_ciphers.dir/ssl_get_shared_ciphers.c.o -o ssl_get_shared_ciphers  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

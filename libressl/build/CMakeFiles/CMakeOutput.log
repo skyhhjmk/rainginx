@@ -1,0 +1,585 @@
+The system is: Linux - 5.15.0-46-generic - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/rainginx/nginx/libressl/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c060/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c060.dir/build.make CMakeFiles/cmTC_8c060.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c060.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8ERKYf.s
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/'
+ as -v --64 -o CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o /tmp/cc8ERKYf.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_8c060
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c060.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -o cmTC_8c060 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8c060' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8c060.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6g5CHy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8c060 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8c060' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8c060.'
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c060/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c060.dir/build.make CMakeFiles/cmTC_8c060.dir/build]
+  ignore line: [gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_8c060.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/cc8ERKYf.s]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o /tmp/cc8ERKYf.s]
+  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_8c060]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c060.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -o cmTC_8c060 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_8c060' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_8c060.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6g5CHy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_8c060 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc6g5CHy.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_8c060] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_8c060.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Determining if the function asprintf exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66a64/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_66a64.dir/build.make CMakeFiles/cmTC_66a64.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_66a64.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=asprintf -fPIE -o CMakeFiles/cmTC_66a64.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_66a64
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66a64.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=asprintf CMakeFiles/cmTC_66a64.dir/CheckFunctionExists.c.o -o cmTC_66a64 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getopt exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0b4f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0b4f4.dir/build.make CMakeFiles/cmTC_0b4f4.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b4f4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=getopt -fPIE -o CMakeFiles/cmTC_0b4f4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_0b4f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b4f4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=getopt CMakeFiles/cmTC_0b4f4.dir/CheckFunctionExists.c.o -o cmTC_0b4f4 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function reallocarray exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c546d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c546d.dir/build.make CMakeFiles/cmTC_c546d.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c546d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=reallocarray -fPIE -o CMakeFiles/cmTC_c546d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c546d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c546d.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=reallocarray CMakeFiles/cmTC_c546d.dir/CheckFunctionExists.c.o -o cmTC_c546d 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strcasecmp exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_53759/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_53759.dir/build.make CMakeFiles/cmTC_53759.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_53759.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strcasecmp -fPIE -o CMakeFiles/cmTC_53759.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strcasecmp’; expected ‘int(const char *, const char *)’ [-Wbuiltin-declaration-mismatch]
+<command-line>: note: in definition of macro ‘CHECK_FUNCTION_EXISTS’
+Linking C executable cmTC_53759
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53759.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strcasecmp CMakeFiles/cmTC_53759.dir/CheckFunctionExists.c.o -o cmTC_53759 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strndup exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3ad36/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3ad36.dir/build.make CMakeFiles/cmTC_3ad36.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3ad36.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strndup -fPIE -o CMakeFiles/cmTC_3ad36.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strndup’; expected ‘char *(const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_3ad36
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ad36.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strndup CMakeFiles/cmTC_3ad36.dir/CheckFunctionExists.c.o -o cmTC_3ad36 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strnlen exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e3eb4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e3eb4.dir/build.make CMakeFiles/cmTC_e3eb4.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3eb4.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strnlen -fPIE -o CMakeFiles/cmTC_e3eb4.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+<command-line>: warning: conflicting types for built-in function ‘strnlen’; expected ‘long unsigned int(const char *, long unsigned int)’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake-3.22/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+    7 |   CHECK_FUNCTION_EXISTS(void);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_e3eb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3eb4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strnlen CMakeFiles/cmTC_e3eb4.dir/CheckFunctionExists.c.o -o cmTC_e3eb4 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function strsep exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f7c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f7c6.dir/build.make CMakeFiles/cmTC_9f7c6.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f7c6.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=strsep -fPIE -o CMakeFiles/cmTC_9f7c6.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f7c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f7c6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=strsep CMakeFiles/cmTC_9f7c6.dir/CheckFunctionExists.c.o -o cmTC_9f7c6 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function timegm exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_24402/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_24402.dir/build.make CMakeFiles/cmTC_24402.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_24402.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=timegm -fPIE -o CMakeFiles/cmTC_24402.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_24402
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_24402.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=timegm CMakeFiles/cmTC_24402.dir/CheckFunctionExists.c.o -o cmTC_24402 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function explicit_bzero exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cbc83/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cbc83.dir/build.make CMakeFiles/cmTC_cbc83.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cbc83.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=explicit_bzero -fPIE -o CMakeFiles/cmTC_cbc83.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_cbc83
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cbc83.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=explicit_bzero CMakeFiles/cmTC_cbc83.dir/CheckFunctionExists.c.o -o cmTC_cbc83 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getauxval exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_415bf/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_415bf.dir/build.make CMakeFiles/cmTC_415bf.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_415bf.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=getauxval -fPIE -o CMakeFiles/cmTC_415bf.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_415bf
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_415bf.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=getauxval CMakeFiles/cmTC_415bf.dir/CheckFunctionExists.c.o -o cmTC_415bf 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function getentropy exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8b5ee/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8b5ee.dir/build.make CMakeFiles/cmTC_8b5ee.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b5ee.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=getentropy -fPIE -o CMakeFiles/cmTC_8b5ee.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b5ee
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b5ee.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=getentropy CMakeFiles/cmTC_8b5ee.dir/CheckFunctionExists.c.o -o cmTC_8b5ee 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the getpagesize exist passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee436/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee436.dir/build.make CMakeFiles/cmTC_ee436.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee436.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_ee436.dir/CheckSymbolExists.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_ee436
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee436.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_ee436.dir/CheckSymbolExists.c.o -o cmTC_ee436 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+File /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <unistd.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpagesize
+  return ((int*)(&getpagesize))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the function syslog exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c9ff1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c9ff1.dir/build.make CMakeFiles/cmTC_c9ff1.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c9ff1.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=syslog -fPIE -o CMakeFiles/cmTC_c9ff1.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_c9ff1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c9ff1.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=syslog CMakeFiles/cmTC_c9ff1.dir/CheckFunctionExists.c.o -o cmTC_c9ff1 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function memmem exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c44f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c44f.dir/build.make CMakeFiles/cmTC_3c44f.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c44f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=memmem -fPIE -o CMakeFiles/cmTC_3c44f.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_3c44f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c44f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=memmem CMakeFiles/cmTC_3c44f.dir/CheckFunctionExists.c.o -o cmTC_3c44f 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files endian.h exist passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ff387/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ff387.dir/build.make CMakeFiles/cmTC_ff387.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ff387.dir/HAVE_ENDIAN_H.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_ff387.dir/HAVE_ENDIAN_H.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CheckIncludeFiles/HAVE_ENDIAN_H.c
+Linking C executable cmTC_ff387
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff387.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_ff387.dir/HAVE_ENDIAN_H.c.o -o cmTC_ff387 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files err.h exist passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3684a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3684a.dir/build.make CMakeFiles/cmTC_3684a.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3684a.dir/HAVE_ERR_H.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_3684a.dir/HAVE_ERR_H.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CheckIncludeFiles/HAVE_ERR_H.c
+Linking C executable cmTC_3684a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3684a.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_3684a.dir/HAVE_ERR_H.c.o -o cmTC_3684a 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if files sys/types.h;arpa/inet.h;netinet/ip.h exist passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3c072/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3c072.dir/build.make CMakeFiles/cmTC_3c072.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3c072.dir/HAVE_NETINET_IP_H.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_3c072.dir/HAVE_NETINET_IP_H.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CheckIncludeFiles/HAVE_NETINET_IP_H.c
+Linking C executable cmTC_3c072
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3c072.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_3c072.dir/HAVE_NETINET_IP_H.c.o -o cmTC_3c072 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function clock_gettime exists in the rt passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1a469/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1a469.dir/build.make CMakeFiles/cmTC_1a469.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1a469.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=clock_gettime -fPIE -o CMakeFiles/cmTC_1a469.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1a469
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1a469.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=clock_gettime CMakeFiles/cmTC_1a469.dir/CheckFunctionExists.c.o -o cmTC_1a469   -L/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/time.h  -Wl,-rpath,/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/time.h -lrt 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ee1c5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ee1c5.dir/build.make CMakeFiles/cmTC_ee1c5.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ee1c5.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_ee1c5.dir/CheckIncludeFile.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ee1c5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ee1c5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_ee1c5.dir/CheckIncludeFile.c.o -o cmTC_ee1c5 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_46c21/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_46c21.dir/build.make CMakeFiles/cmTC_46c21.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_46c21.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_46c21.dir/CheckIncludeFile.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_46c21
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_46c21.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_46c21.dir/CheckIncludeFile.c.o -o cmTC_46c21 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7b3f3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7b3f3.dir/build.make CMakeFiles/cmTC_7b3f3.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7b3f3.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_7b3f3.dir/CheckIncludeFile.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_7b3f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7b3f3.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_7b3f3.dir/CheckIncludeFile.c.o -o cmTC_7b3f3 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of time_t passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3db32/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3db32.dir/build.make CMakeFiles/cmTC_3db32.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3db32.dir/SIZEOF_TIME_T.c.o
+/usr/bin/cc   -Wall  -fPIE -o CMakeFiles/cmTC_3db32.dir/SIZEOF_TIME_T.c.o -c /rainginx/nginx/libressl/build/CMakeFiles/CheckTypeSize/SIZEOF_TIME_T.c
+Linking C executable cmTC_3db32
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3db32.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_3db32.dir/SIZEOF_TIME_T.c.o -o cmTC_3db32 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function accept4 exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6142e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6142e.dir/build.make CMakeFiles/cmTC_6142e.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6142e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=accept4 -fPIE -o CMakeFiles/cmTC_6142e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_6142e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6142e.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=accept4 CMakeFiles/cmTC_6142e.dir/CheckFunctionExists.c.o -o cmTC_6142e 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pipe2 exists passed with the following output:
+Change Dir: /rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_562ad/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_562ad.dir/build.make CMakeFiles/cmTC_562ad.dir/build
+gmake[1]: Entering directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_562ad.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCHECK_FUNCTION_EXISTS=pipe2 -fPIE -o CMakeFiles/cmTC_562ad.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_562ad
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_562ad.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCHECK_FUNCTION_EXISTS=pipe2 CMakeFiles/cmTC_562ad.dir/CheckFunctionExists.c.o -o cmTC_562ad 
+gmake[1]: Leaving directory '/rainginx/nginx/libressl/build/CMakeFiles/CMakeTmp'
+
+
+

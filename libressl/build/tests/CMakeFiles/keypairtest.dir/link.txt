@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/keypairtest.dir/keypairtest.c.o -o keypairtest  ../tls/libtls.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/hkdf_test.dir/hkdf_test.c.o -o hkdf_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

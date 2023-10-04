@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/tlsexttest.dir/tlsexttest.c.o -o tlsexttest  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

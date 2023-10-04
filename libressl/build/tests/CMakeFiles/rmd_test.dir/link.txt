@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/rmd_test.dir/rmd_test.c.o -o rmd_test  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

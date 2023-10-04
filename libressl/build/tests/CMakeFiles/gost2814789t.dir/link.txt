@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/gost2814789t.dir/gost2814789t.c.o -o gost2814789t  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

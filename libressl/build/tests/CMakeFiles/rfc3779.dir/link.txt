@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/rfc3779.dir/rfc3779.c.o -o rfc3779  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

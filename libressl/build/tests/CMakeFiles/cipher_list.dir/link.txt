@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/cipher_list.dir/cipher_list.c.o -o cipher_list  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 

@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -O3 -DNDEBUG CMakeFiles/ssl_versions.dir/ssl_versions.c.o -o ssl_versions  ../ssl/libssl.a ../crypto/libcrypto.a -lpthread -lrt 
