@@ -1,5 +1,5 @@
 # Rainginx
-取名灵感来自雨云（rainyun）和原版nginx
+取名灵感来自[雨云（rainyun）](https://www.rainyun.com/wp-admin_)和原版nginx
 
 # 参考配置文件
 ```conf
